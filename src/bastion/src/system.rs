@@ -6,7 +6,7 @@ use crate::envelope::Envelope;
 use crate::message::{BastionMessage, Deployment};
 use crate::path::{BastionPath, BastionPathElement};
 use crate::supervisor::{Supervisor, SupervisorRef};
-use async_mutex::Mutex as AsyncMutex;
+use async_lock::Mutex as AsyncMutex;
 use bastion_executor::pool;
 use futures::prelude::*;
 use futures::stream::FuturesUnordered;
